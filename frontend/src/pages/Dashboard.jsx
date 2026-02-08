@@ -44,7 +44,7 @@ const Dashboard = () => {
   useEffect(() => {
     // Today
     authApi
-      .get("/journal/entry", {
+      .get("api/journal/entry", {
         params: { email: rawEmail, date: today },
       })
       .then(res => setTodayEntry(res.data))
@@ -52,7 +52,7 @@ const Dashboard = () => {
 
     // Recent 7
     authApi
-      .get("/journal/recent", {
+      .get("api/journal/recent", {
         params: { email: rawEmail },
       })
       .then(res => {

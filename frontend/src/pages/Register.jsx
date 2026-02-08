@@ -30,7 +30,7 @@ const Register = () => {
         setLoading(true);
 
         try {
-            const res = await authApi.post("/auth/register", {
+            const res = await authApi.post("/api/auth/register", {
                 email,
                 password,
             });

@@ -32,7 +32,7 @@ const Login = () => {
         setLoading(true);
 
         try {
-            const res = await authApi.post("/auth/login", {
+            const res = await authApi.post("api/auth/login", {
                 email,
                 password,
             });

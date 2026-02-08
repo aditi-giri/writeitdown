@@ -24,7 +24,7 @@ const Journal = () => {
     // 🔄 Load existing entry (if any)
     useEffect(() => {
         authApi
-            .get("/journal/entry", {
+            .get("api/journal/entry", {
                 params: {
                     email: localStorage.getItem("email"),
                     date: selectedDate,

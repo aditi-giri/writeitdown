@@ -22,7 +22,7 @@ const ViewEntry = () => {
         if (!verified) return;
 
         authApi
-            .get("/journal/entry", {
+            .get("api/journal/entry", {
                 params: {
                     email: localStorage.getItem("email"),
                     date: selectedDate,
@@ -37,7 +37,7 @@ const ViewEntry = () => {
 
     const handleVerify = async () => {
         try {
-            await authApi.post("/auth/verify", {
+            await authApi.post("api/auth/verify", {
                 email: localStorage.getItem("email"),
                 password,
             });

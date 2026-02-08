@@ -22,7 +22,7 @@ const Calendar = () => {
 
   useEffect(() => {
     authApi
-      .get("/journal/calendar", {
+      .get("api/journal/calendar", {
         params: {
           year,
           month,
