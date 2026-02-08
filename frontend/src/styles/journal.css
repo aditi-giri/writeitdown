@@ -1,0 +1,63 @@
+.journal-page {
+  min-height: calc(100vh - 60px);
+  background: #f3f8f6;
+  display: flex;
+  justify-content: center;
+  padding: 40px 16px;
+}
+
+.journal-card {
+  width: 100%;
+  max-width: 720px;
+  background: #fff;
+  padding: 32px;
+  border-radius: 14px;
+  border: 1px solid #d6e5de;
+  box-shadow: 0 12px 30px rgba(79,143,120,0.12);
+  height: 95%;
+}
+
+.journal-title {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.mood-select {
+  width: 100%;
+  padding: 14px;
+  border-radius: 8px;
+  border: 1px solid #d6e5de;
+  margin-bottom: 16px;
+}
+
+.journal-textarea {
+  width: 96%;
+  padding: 14px;
+  border-radius: 10px;
+  border: 1px solid #d6e5de;
+  margin-bottom: 20px;
+}
+
+.journal-save-btn {
+  width: 100%;
+  padding: 12px;
+  background: #6faf98;
+  color: white;
+  border: none;
+  border-radius: 10px;
+}
+
+.journal-save-btn:disabled {
+  opacity: 0.5;
+}
+
+.journal-lock {
+  font-size: 13px;
+  color: #6b7280;
+}
+
+.journal-message {
+  margin-top: 12px;
+  text-align: center;
+}

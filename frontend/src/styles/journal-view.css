@@ -1,0 +1,128 @@
+.view-card {
+    animation: fadeIn 0.4s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(6px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.view-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 16px;
+    align-items: center;
+}
+
+.view-badge {
+    font-size: 12px;
+    padding: 4px 5px;
+    border-radius: 10px;
+    height: 50%;
+}
+
+.view-badge.edit {
+    background: #e6f4ee;
+    color: #4f8f78;
+}
+
+.view-badge.locked {
+    background: #f1f5f9;
+}
+
+.view-mood {
+    margin-bottom: 10px;
+    color: #4f8f78;
+}
+
+.journal-paper {
+    background: #f9fdfb;
+    border-left: 4px solid #9bc9b8;
+    padding: 18px;
+    border-radius: 10px;
+    line-height: 1.7;
+}
+
+.soft-box {
+    background: #f9fdfb;
+    border: 1px dashed #cfe3da;
+    padding: 20px;
+    border-radius: 12px;
+}
+
+.confirm-text {
+    margin-bottom: 10px;
+}
+
+.confirm-input {
+    width: 96%;
+    padding: 12px 13px;
+    margin-bottom: 12px;
+  
+    font-size: 14px;
+    color: #1f2933;
+  
+    background: #ffffff;
+    border: 1px solid #d6e5de;
+    border-radius: 10px;
+  
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  /* Focus = intent + safety */
+  .confirm-input:focus {
+    outline: none;
+    border-color: #6faf98;
+    box-shadow: 0 0 0 3px rgba(111, 175, 152, 0.25);
+  }
+  
+  /* Subtle placeholder */
+  .confirm-input::placeholder {
+    color: #9ca3af;
+    font-size: 13px;
+  }
+  
+  /* Error state (used with .confirm-error visible) */
+  .confirm-input.error {
+    border-color: #dc2626;
+    box-shadow: 0 0 0 3px rgba(220, 38, 38, 0.15);
+  }
+  
+  /* Disabled (future-proofing) */
+  .confirm-input:disabled {
+    background: #f3f4f6;
+    cursor: not-allowed;
+    opacity: 0.7;
+  }
+  
+
+.confirm-btn {
+    width: 100%;
+    padding: 10px;
+    background: #6faf98;
+    color: white;
+    border: none;
+    border-radius: 8px;
+}
+
+.confirm-error {
+    margin-top: 8px;
+    color: #dc2626;
+    font-size: 13px;
+}
+
+.edit-btn {
+    margin-top: 20px;
+    width: 100%;
+    padding: 12px;
+    background: #9bc9b8;
+    border: none;
+    border-radius: 10px;
+}
