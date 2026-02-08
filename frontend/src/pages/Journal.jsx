@@ -54,7 +54,7 @@ const Journal = () => {
         if (!isToday) return;
 
         try {
-            await authApi.post("/journal", {
+            await authApi.post("api/journal", {
                 email: localStorage.getItem("email"),
                 content,
                 mood,
