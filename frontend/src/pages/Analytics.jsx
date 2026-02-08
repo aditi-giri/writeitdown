@@ -21,7 +21,7 @@ const Analytics = () => {
 
   useEffect(() => {
     authApi
-      .get("/analytics/monthly", {
+      .get("api/analytics/monthly", {
         params: {
           email: localStorage.getItem("email"),
           year,
