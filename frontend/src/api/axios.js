@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const authApi = axios.create({
-  baseURL: import.meta.env.VITE_API_URL,
+  baseURL: https://writeitdown-1.onrender.com,
 });
 
 export default authApi;
