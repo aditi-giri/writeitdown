@@ -33,5 +33,4 @@ build/
 .vscode/
 
 target/
-application.properties
 .env
